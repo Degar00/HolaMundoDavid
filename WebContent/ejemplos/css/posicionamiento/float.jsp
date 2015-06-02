@@ -16,32 +16,44 @@
 			}
 		
 			.cnt_article div{
-				border: 2px solid green;
+				border: 2px solid black;
 				width: 100px;
 				height: 100px;
-				margin: 0 auto;
 				margin-bottom: 15px;
 				padding: 10px;
 			}
 			
+			
 			#capa1{
 				background-color: green;
+				float: left;
 			}
 			
 			#capa2{
 				background-color: orange;
+				float: left;
 			}
+			
 			#capa3{
 				background-color: blue;
+				float: left;
+				clear: left;
 			}
+			
 		</style>
+		<div class="cnt_article clearfix">
+			<div id="capa1">Capa 1</div>
+			<div id="capa2">Capa 2</div>
+			<div id="capa3">Capa 3</div>
+		</div>
+		
 		<div class="cnt_article">
 			<div id="capa1">Capa 1</div>
 			<div id="capa2">Capa 2</div>
 			<div id="capa3">Capa 3</div>
 		</div>
 		<footer>
-			Capitulo 9; pagina 203
+			Capitulo 9 pagina 212 + <a href="http://librosweb.es/libro/css_avanzado/capitulo_1/limpiar_floats.html" target="_blank">Limpiar floats</a>
 		</footer>
 	</article>
 

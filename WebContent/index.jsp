@@ -56,6 +56,8 @@
 		<li><a href="http://www.caniuse.com" target="_blank">Can I Use</a>
 		<li><a href="http://www.formacion.ipartek.com/campus" target="_blank">Campus Ipartek</a>
 		<li><a href="http://github.com" target="_blank">GitHub</a>
+		<li><a href="http://librosweb.es/libro/css/" target="_blank">CSS Basico</a>
+		<li><a href="http://librosweb.es/libro/css_avanzado/" target="_blank">CSS Avanzado</a>
 	</ul>
 </aside>
 <div class=clearfix></div>
