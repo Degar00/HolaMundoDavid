@@ -1,0 +1,5 @@
+# Media files #
+############
+*.ogg
+*.avi
+/build/
