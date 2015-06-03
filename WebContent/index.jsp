@@ -12,10 +12,11 @@
 	<section>
 		<img id="suerte" src="images/buena_suerte.jpg" alt="Buena suerte" title="Buena suerte"/>
 		<h2>El afortunado en leer es el:</h2>
-		<label id="afortunado" class="numero">Afortunado@</label>
-		<br/>
-		<input type="button" value="Obtener nuev@ afortunad@" id="btn_ganador" name="btn_ganador" onclick="obtener_ganador();" />
-	
+		<div id="div_afortunado">
+			<label id="afortunado" class="numero">Afortunado@</label>
+			<br/>
+			<input type="button" value="Obtener nuev@ afortunad@" id="btn_ganador" name="btn_ganador" onclick="obtener_ganador();" />
+		</div>
 		<br/>
 		<br/>
 		

@@ -1,9 +1,3 @@
-
-<br />
-<br />
-
-
-
 <nav id="nav">
 
 	<ul class="nav">
@@ -101,6 +95,3 @@
 		</li>
 	</ul>
 </nav>
-
-<br />
-<br />

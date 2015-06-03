@@ -1,11 +1,11 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css">
 
-<h2>Ejemplo Etiqueta datalist</h2>
+
 
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
-<div id="canvas">
-
+<div id="datalist">
+<h2>Ejemplo Etiqueta datalist</h2>
 	<section>
 		<article>
 			<header><h1>Datalist</h1></header>

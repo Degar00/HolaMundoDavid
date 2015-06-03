@@ -1,5 +1,5 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
-
+<div id="datos_personales">
 <h1>Login</h1>
 
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
@@ -89,5 +89,5 @@
 		<input type="reset" value="Reset" />
 	
 	</form>
-	
+	</div>
 <jsp:include page="../../plantillas/footer.jsp"></jsp:include>

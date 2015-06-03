@@ -4,7 +4,7 @@
 
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<div id="time">
+<div id="time" class="clearfix">
 
 <section>
   <header>

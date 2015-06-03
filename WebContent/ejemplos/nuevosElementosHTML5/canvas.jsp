@@ -1,11 +1,11 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 
-<h2>Ejemplo Etiqueta Canvas</h2>
+
 
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
 <div id="canvas">
-
+<h2>Ejemplo Etiqueta Canvas</h2>
 <section>
   <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
 </canvas>

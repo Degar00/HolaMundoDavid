@@ -12,7 +12,6 @@
 @import url("jquery.dataTables.min.css");
 
 /* Etiquetas */
-
 body {
 	background-image: url("../images/back.jpg");
 	font-family: arial;
@@ -82,18 +81,16 @@ li {
 /*   -webkit-margin-start: 40px; */
 /*   -webkit-margin-end: 40px; */
 /* } */
-
-
 figure img {
-    width: 25%;
-    height: auto;
+	width: 25%;
+	height: auto;
 }
 
 figure {
-    text-align: center;
-    display: table;
-    max-width: 75%;
-    margin: 10px auto;
+	text-align: center;
+	display: table;
+	max-width: 75%;
+	margin: 10px auto;
 }
 
 /* Clases Comunes */
@@ -145,41 +142,39 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	color: grey;
 }
 
-fieldset{
+fieldset {
 	border: 1px solid grey;
 	padding: 10px 20px;
 	margin-bottom: 20px;
 }
 
-legend{
-	
+legend {
 	font-weight: bold;
 }
 
-form input[type="text"]:required:valid{
+form input[type="text"]:required:valid {
 	background-color: rgb(173, 218, 132);
 }
 
-form input[type="text"]:focus:required:invalid{
+form input[type="text"]:focus:required:invalid {
 	background-color: rgb(218, 132, 132);
+}
+
+header {
+	margin-top: 15px;
+}
+
+footer {
 	
 }
 
-header{
-
-}
-
-footer{
-
-}
-
-section{
+section {
 	width: 65%;
 	float: left;
 	padding: 20px;
 }
 
-aside{
+aside {
 	margin: 20px 10px;
 	width: 25%;
 	float: right;
@@ -187,43 +182,78 @@ aside{
 	background-color: rgba(128, 128, 128, 0.55);
 }
 
-footer{
+footer {
 	margin: 15px 10px;
 	padding: 15px 0;
 	background-color: rgba(128, 128, 128, 0.55);
 }
 
-footer li{
+footer li {
 	display: inline;
 	margin: 0 15px;
 }
 
-article{
+article {
 	border: 1px solid grey;
 	padding: 20px;
 	margin-bottom: 15px;
 }
 
-article h1{
+article h1 {
 	font-size: 30px;
 	background-color: grey;
 	color: orange;
 	padding: 5px 0;
 }
 
-.cnt_article{
+.cnt_article {
 	border: 1px solid red;
-	padding: 15px;	
+	padding: 15px;
 }
 
 /* Particulares */
 
 /*Index*/
-#index #content{
+#btn_ganador {
+	margin: 15px;
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2b53b8);
+	background-image: -moz-linear-gradient(top, #3498db, #2b53b8);
+	background-image: -ms-linear-gradient(top, #3498db, #2b53b8);
+	background-image: -o-linear-gradient(top, #3498db, #2b53b8);
+	background-image: linear-gradient(to bottom, #3498db, #2b53b8);
+	-webkit-border-radius: 15;
+	-moz-border-radius: 15;
+	border-radius: 15px;
+	font-family: Arial;
+	color: #ebebeb;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	border: solid #1f628d 1px;
+	text-decoration: none;
+	background: #3498db;
+}
+
+#btn_ganador:hover {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+}
+
+#div_afortunado {
+	margin: 0 auto;
+	width: 50%;
+}
+
+#index #content {
 	position: relative;
 }
 
-#index aside{
+#index aside {
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -269,9 +299,11 @@ article h1{
 	color: #0099ff;
 	font-family: arial;
 	font-size: 50px;
+	display: block;
+	text-align: center;
 }
 
-#index aside h3{
+#index aside h3 {
 	font-size: 30px;
 	color: green;
 	text-align: center;
@@ -279,6 +311,10 @@ article h1{
 }
 
 /*Parrafos*/
+#parrafos {
+	margin-top: 20px;
+}
+
 #parrafos .encabezado {
 	border: 5px dotted green;
 	padding: 35px;
@@ -293,10 +329,18 @@ article h1{
 }
 
 /*Bloques*/
-
+#ej2 {
+	margin: 20px 0;
+}
 /*Listas*/
-
+#ej3{
+	margin: 20px 0;
+}
 /*Cartelera detalle*/
+#cartelera_detalle{
+	margin-top: 20px;
+}
+
 #cartelera_detalle .cartel {
 	width: 250px;
 	height: auto;
@@ -330,6 +374,47 @@ article h1{
 	padding: 15px;
 }
 /*Cartelera*/
+#cart{
+	margin-top: 20px;
+}
+
+#cart .carteles img {
+	float: left;
+	height: 250px;
+	width: 100%;
+}
+
+#cart .carteles p {
+	display: none;
+	float: left;
+	position: absolute;
+	bottom: 0px;
+	background-color: rgba(76, 74, 74, 0.72);
+	border-top: 1px solid #fff;
+	margin: 0px;
+	width: 100%;
+	height: 25%;
+	text-align: center;
+	padding: 15px 0;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#cart .carteles img:hover+p, #cart .carteles p:hover {
+	display: block;
+}
+
+#cart .carteles img {
+	position: relative;
+}
+
+#cart .pelicula {
+	position: relative;
+	display: inline-block;
+	width: 20%;
+	display: inline-block;
+}
+
 #cart .cartelera {
 	list-style-type: none;
 }
@@ -390,30 +475,35 @@ article h1{
 }
 
 /* Datatables*/
+#tables {
+	width: auto;
+}
 
-#tables{
-	width:auto;
+#tables h1{
+	padding-top: 20px;
 }
 
 /* NAV */
-
-#nav{
+#nav {
 	position: fixed;
-	top: 10px;
-	left: 25%;
-	width: 600px;
-	margin:0px auto 15px;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	margin: 0px auto 15px;
+	z-index: 2;
+	background-image: url("../images/back.jpg");
+	padding: 10px 0px;
 }
 
-.nav *{
-	margin:0px;
-	padding:0px;
+.nav * {
+	margin: 0px;
+	padding: 0px;
 }
 
-#logo{
-	 display: block;
-     width: 100%;
-     height: 100%;
+#logo {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 #logo img {
@@ -421,9 +511,13 @@ article h1{
 	height: 13px;
 }
 
+.nav {
+	width: 50%;
+}
+
 .nav, .nav ul, .nav ol {
 	list-style: none;
-	margin: 0px;
+	margin: 0px auto;
 }
 
 .nav>li, .nav>h3 {
@@ -462,6 +556,50 @@ article h1{
 }
 
 /* Footer */
-.social_links{
+.social_links {
 	
+}
+
+
+/* Figure */
+
+#figure section{
+	padding: 0px;
+	width:100%;
+}
+
+/* Canvas */
+
+#canvas h2{
+	padding-top: 20px;
+}
+
+/* Mark */
+
+#mark h2{
+	padding-top: 20px;
+}
+
+/* Login */
+
+#login h1{
+	padding-top: 20px;
+}
+
+/* Datos_personales */
+
+#datos_personales h1{
+	padding-top: 20px;
+}
+
+/* Datalist*/
+
+#datalist h2{
+	padding-top: 20px;
+}
+
+/* Progress y meter*/
+
+#progress_meter h2{
+	padding-top: 20px;
 }

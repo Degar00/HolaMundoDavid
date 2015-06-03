@@ -4,7 +4,7 @@
 
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<div id="figure">
+<div id="figure" class="clearfix">
 <section>
 <figure>
   <img src="images/andro1.jpg" alt="Imagen de un androidify">

@@ -1,10 +1,11 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 
-<h2>Ejemplo Etiquetas Progress y Meter</h2>
+
 
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<div id="canvas">
+<div id="progress_meter">
+<h2>Ejemplo Etiquetas Progress y Meter</h2>
 	<section>
 		<fieldset>
 			<legend>Meter</legend>
