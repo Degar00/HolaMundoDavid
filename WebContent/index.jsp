@@ -8,7 +8,6 @@
 	</header>
 	
 	<hr/>
-	<br/>
 	<div id="content">
 	<section>
 		<img id="suerte" src="images/buena_suerte.jpg" alt="Buena suerte" title="Buena suerte"/>

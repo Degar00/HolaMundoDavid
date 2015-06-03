@@ -47,7 +47,7 @@
 			<div id="capa3">Capa 3</div>
 		</div>
 		
-		<div class="cnt_article">
+		<div class="cnt_article" style="overflow: hidden;">
 			<div id="capa1">Capa 1</div>
 			<div id="capa2">Capa 2</div>
 			<div id="capa3">Capa 3</div>

@@ -12,6 +12,7 @@
 @import url("jquery.dataTables.min.css");
 
 /* Etiquetas */
+
 body {
 	background-image: url("../images/back.jpg");
 	font-family: arial;
@@ -175,10 +176,11 @@ footer{
 section{
 	width: 65%;
 	float: left;
+	padding: 20px;
 }
 
 aside{
-	margin: 30px 10px;
+	margin: 20px 10px;
 	width: 25%;
 	float: right;
 	padding: 15px 15px;
@@ -217,14 +219,21 @@ article h1{
 /* Particulares */
 
 /*Index*/
-#index {
-	
+#index #content{
+	position: relative;
+}
+
+#index aside{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
 }
 
 #suerte {
 	height: 175px;
 	width: 630px;
-	margin: 25px auto;
+	margin: 0px auto 10px;
 	display: block;
 }
 
@@ -260,6 +269,13 @@ article h1{
 	color: #0099ff;
 	font-family: arial;
 	font-size: 50px;
+}
+
+#index aside h3{
+	font-size: 30px;
+	color: green;
+	text-align: center;
+	font-weight: bold;
 }
 
 /*Parrafos*/
@@ -381,11 +397,17 @@ article h1{
 
 /* NAV */
 
-nav{
-	background-color: #CAD5CD;
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+#nav{
+	position: fixed;
+	top: 10px;
+	left: 25%;
+	width: 600px;
+	margin:0px auto 15px;
+}
+
+.nav *{
+	margin:0px;
+	padding:0px;
 }
 
 #logo{
@@ -399,86 +421,47 @@ nav{
 	height: 13px;
 }
 
-#nav ul {
-	text-align: left;
-	display: inline;
-	margin: 0;
-	padding: 15px 4px 17px 0;
+.nav, .nav ul, .nav ol {
 	list-style: none;
-	
+	margin: 0px;
 }
 
-#nav ul h3 {
-	margin-bottom: 0px;
+.nav>li, .nav>h3 {
+	float: left;
 }
 
-#nav li a{
-     text-decoration: none;
-     display: block;
-     width: 100%;
-     height: 100%;
-}
-
-#nav ul li {
-	font: bold 16px/18px sans-serif;
-	display: inline-block;
-	margin-right: -6px;
-	margin-bottom: 0px;
-	position: relative;
-	padding: 15px 20px;
-	background: #CAD5CD;
-	cursor: pointer;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-}
-
-#nav ul li:hover {
-	background: #b4b9ba;
+.nav li a, .nav li h3 {
+	background-color: #000;
 	color: #fff;
+	text-decoration: none;
+	padding: 10px 12px;
+	display: block;
 }
 
-#nav ul li ul {
-	padding: 0;
-	position: absolute;
-	top: 48px;
-	left: 0;
-	width: 150px;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+.nav li a:hover, .nav li h3:hover {
+	background-color: #434343;
+}
+
+.nav li ul {
 	display: none;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transiton: opacity 0.2s;
-	-moz-transition: opacity 0.2s;
-	-ms-transition: opacity 0.2s;
-	-o-transition: opacity 0.2s;
-	-transition: opacity 0.2s;
-	z-index: 2;
+	position: absolute;
+	min-width: 140px;
 }
 
-#nav ul li ul li {
-	background: #b4b9ba;
+.nav li:hover>ul {
 	display: block;
-	color: #fff;
-	text-shadow: 0 -1px 0 #000;
 }
 
-#nav ul li ul li:hover {
-	background: #666;
+.nav li ul li {
+	position: relative;
 }
 
-#nav ul li:hover ul {
-	display: block;
-	opacity: 1;
-	visibility: visible;
+.nav li ul li ul {
+	right: -140px;
+	top: 0px;
 }
 
 /* Footer */
-
 .social_links{
 	
 }

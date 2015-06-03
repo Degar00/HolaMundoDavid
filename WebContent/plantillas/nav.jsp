@@ -6,7 +6,7 @@
 
 <nav id="nav">
 
-	<ul>
+	<ul class="nav">
 		<li>
 <!-- 			<div id="logo"> -->
 				<a id="logo" href="index.jsp"> <img src="images/dado.jpg" class="nav_img"
