@@ -6,53 +6,49 @@
 <ul class="cartelera">
 	<li class="cine">
 		<h3>ZUBIARTE</h3>
-		<ul>
-			<li class="horarios">
-				<a href="#" title="Enlace a la pelicula">
-				<div>
+		<div class="carteles">
+			<div class="pelicula">
+				<a href=# title="Enlace a la pelicula">
 					<img  src="images/fast_furious.jpg" alt="Cartel de fast and furious"/>
-					<p class="titulo">Fast and furious</p>
-					<p class="t_horario">16:00 | 22:00</p>
-				</div>
+					<p class="info">Fast and furious<br><br>16:00 | 22:00</p>
 				</a>
-			</li>
-			<li class="horarios">
+			</div>
+			<div class="pelicula">
 				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Enlace a la pelicula">
-				<div>
 					<img  src="images/mad_max.jpg" alt="Cartel de Mad Max"/>
-					<p class="titulo">Mad Max</p>
-					<p class="t_horario">19:00 | 23:00</p>
-				</div>
+					<p class="info">Mad Max<br><br>19:00 | 23:00</p>
 				</a>
-			</li>
-		</ul>
-	</li>
+			</div>
+			<div class="pelicula">
+				<a href=# title="Enlace a la pelicula">
+					<img  src="images/poltergeist.jpg" alt="Cartel de Poltergeist"/>
+					<p class="info">Poltergeist<br><br>16:00 | 18:10</p>
+				</a>
+			</div>
+		</div>
 	<li class="cine">
 		<h3>CAPITOL</h3>
-		<ul>
-			<li class="horarios">
-				<a href="#" title="Enlace a la pelicula">
-				<div>
+		<div class="carteles">
+			<div class="pelicula">
+				<a href=# title="Enlace a la pelicula">
 					<img  src="images/fast_furious.jpg" alt="Cartel de fast and furious"/>
-					<p class="titulo">Fast and furious</p>
-					<p class="t_horario">16:00 | 22:00</p>
-				</div>
+					<p class="info">Fast and furious<br><br>16:00 | 22:00</p>
 				</a>
-			</li>
-			<li class="horarios">
+			</div>
+			<div class="pelicula">
 				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Enlace a la pelicula">
-				<div>
 					<img  src="images/mad_max.jpg" alt="Cartel de Mad Max"/>
-					<p class="titulo">Mad Max</p>
-					<p class="t_horario">19:00 | 23:00</p>
-				</div>
+					<p class="info">Mad Max<br><br>19:00 | 23:00</p>
 				</a>
-			</li>
-		</ul>
-	</li>
-
-</ul>
-
+			</div>
+			<div class="pelicula">
+				<a href=# title="Enlace a la pelicula">
+					<img  src="images/poltergeist.jpg" alt="Cartel de Poltergeist"/>
+					<p class="info">Poltergeist<br><br>16:00 | 18:10</p>
+				</a>
+			</div>
+		</div>
+		
 </div> <!-- cartelera -->
 <div class="clearfix"></div>
 <jsp:include page="../../plantillas/footer.jsp"></jsp:include>
