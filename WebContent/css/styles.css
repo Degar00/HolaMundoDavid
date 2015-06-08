@@ -164,9 +164,6 @@ header {
 	margin-top: 15px;
 }
 
-footer {
-	
-}
 
 section {
 	width: 65%;
@@ -182,16 +179,6 @@ aside {
 	background-color: rgba(128, 128, 128, 0.55);
 }
 
-footer {
-	margin: 15px 10px;
-	padding: 15px 0;
-	background-color: rgba(128, 128, 128, 0.55);
-}
-
-footer li {
-	display: inline;
-	margin: 0 15px;
-}
 
 article {
 	border: 1px solid grey;
@@ -224,6 +211,7 @@ article h1 {
 	background-image: linear-gradient(to bottom, #3498db, #2b53b8);
 	-webkit-border-radius: 15;
 	-moz-border-radius: 15;
+	box-shadow: 7px 7px 6px #666666;
 	border-radius: 15px;
 	font-family: Arial;
 	color: #ebebeb;
@@ -235,13 +223,14 @@ article h1 {
 }
 
 #btn_ganador:hover {
-	background: #3cb0fd;
-	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	background: #aedbf5;
+	background-image: -webkit-linear-gradient(top, #aedbf5, #7aa8c7);
+	background-image: -moz-linear-gradient(top, #aedbf5, #7aa8c7);
+	background-image: -ms-linear-gradient(top, #aedbf5, #7aa8c7);
+	background-image: -o-linear-gradient(top, #aedbf5, #7aa8c7);
+	background-image: linear-gradient(to bottom, #aedbf5, #7aa8c7);
 	text-decoration: none;
+	color: #3498db;
 }
 
 #div_afortunado {
@@ -333,11 +322,11 @@ article h1 {
 	margin: 20px 0;
 }
 /*Listas*/
-#ej3{
+#ej3 {
 	margin: 20px 0;
 }
 /*Cartelera detalle*/
-#cartelera_detalle{
+#cartelera_detalle {
 	margin-top: 20px;
 }
 
@@ -374,8 +363,12 @@ article h1 {
 	padding: 15px;
 }
 /*Cartelera*/
-#cart{
+#cart {
 	margin-top: 20px;
+}
+
+#cart carteles, #cart ul ul {
+	list-style-type: none;
 }
 
 #cart .carteles img {
@@ -412,7 +405,6 @@ article h1 {
 	position: relative;
 	display: inline-block;
 	width: 20%;
-	display: inline-block;
 }
 
 #cart .cartelera {
@@ -479,7 +471,7 @@ article h1 {
 	width: auto;
 }
 
-#tables h1{
+#tables h1 {
 	padding-top: 20px;
 }
 
@@ -512,7 +504,7 @@ article h1 {
 }
 
 .nav {
-	width: 50%;
+	width: 53%;
 }
 
 .nav, .nav ul, .nav ol {
@@ -556,50 +548,96 @@ article h1 {
 }
 
 /* Footer */
-.social_links {
-	
+footer {
+	margin: 15px 10px;
+	padding: 15px 0;
+	background-color: rgba(128, 128, 128, 0.55);
 }
 
+footer li {
+	display: inline;
+	margin: 0 15px;
+}
+
+#list_paginas{
+	float:left;
+}
+
+.social_links{
+	list-style-type: none;
+	float: right;
+}
+
+.social_links li {
+	padding: 16px 24px;
+	list-style-type: none;
+	margin: 0 10px;
+}
+
+.facebook{
+	background: url("../images/sprite-social-icons.png") no-repeat -18px -100px;
+}
+
+.facebook:hover{
+	background: url("../images/sprite-social-icons.png") no-repeat -18px -184px;
+}
+
+.google{
+	background: url("../images/sprite-social-icons.png") no-repeat -269px -100px;
+}
+
+.google:hover{
+	background: url("../images/sprite-social-icons.png") no-repeat -269px -184px;
+}
+
+.twitter{
+	background: url("../images/sprite-social-icons.png") no-repeat -690px -100px;
+}
+
+.twitter:hover{
+	background: url("../images/sprite-social-icons.png") no-repeat -690px -184px;
+}
+
+.youtube{
+	background: url("../images/sprite-social-icons.png") no-repeat -858px -100px;
+}
+
+.youtube:hover{
+	background: url("../images/sprite-social-icons.png") no-repeat -858px -184px;
+}
 
 /* Figure */
-
-#figure section{
+#figure section {
 	padding: 0px;
-	width:100%;
+	width: 100%;
 }
 
 /* Canvas */
-
-#canvas h2{
+#canvas h2 {
 	padding-top: 20px;
 }
 
 /* Mark */
-
-#mark h2{
+#mark h2 {
 	padding-top: 20px;
 }
 
 /* Login */
-
-#login h1{
+#login h1 {
 	padding-top: 20px;
 }
 
 /* Datos_personales */
-
-#datos_personales h1{
+#datos_personales h1 {
 	padding-top: 20px;
 }
 
 /* Datalist*/
-
-#datalist h2{
+#datalist h2 {
 	padding-top: 20px;
 }
 
 /* Progress y meter*/
-
-#progress_meter h2{
+#progress_meter h2 {
 	padding-top: 20px;
 }
