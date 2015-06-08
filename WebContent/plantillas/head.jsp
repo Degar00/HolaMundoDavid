@@ -22,6 +22,9 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+<!-- FontAwesome font icon -->
+<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
 
 <!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

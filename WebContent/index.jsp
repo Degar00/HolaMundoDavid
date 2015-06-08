@@ -61,19 +61,6 @@
 	</ul>
 </aside>
 <div class=clearfix></div>
-</div>
-<footer>
-	<span class="copy">@Copyright</span>
-	<ul id="list_paginas">
-		<li><a href="#" target="_blank">Contacto</a></li>
-		<li><a href="#" target="_blank">Aviso legal</a></li>
-	</ul>
-	<ul class="social_links">
-		<li><a href="#" target="_blank">Facebook</a></li>
-		<li><a href="#" target="_blank">G+</a></li>
-		<li><a href="#" target="_blank">Twitter</a></li>
-		<li><a href="#" target="_blank">Youtube</a></li>
-	</ul>
-</footer>
+</div> <!-- content -->
 </div> <!-- index -->
 <jsp:include page="plantillas/footer.jsp"></jsp:include>

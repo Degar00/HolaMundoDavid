@@ -73,7 +73,7 @@
 			<h3>CSS3</h3>
 			<ul>
 				<li><a href="ejemplos/css/selectores/atributos.jsp"
-					title="Ir al ejercicio de atributos">Atributos</a></li>
+					title="Ir al ejercicio de atributos">Selectores</a></li>
 				<li>
 					<h3>Posicionamiento</h3>
 					<ul>
@@ -91,6 +91,29 @@
 						title="Posicionamiento float">Float</a></li>	
 					</ul>
 				</li>
+				<li>
+					<h3>Tecnicas Avanzadas</h3>
+					<ul>
+						<li><a href="ejemplos/css/tecnicas_avanzadas/fonticon.jsp"
+							title="FontIcons">FontIcon</a>
+						</li>
+						<li><a href="ejemplos/css/tecnicas_avanzadas/sprites.jsp"
+							title="Sprites">Sprites</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<h3>JavaScript</h3>
+			<ul>
+				<li>
+					<h3>Basicos</h3>
+					<ul>
+						<li><a href="ejemplos/javascript/basicos/variables.jsp"
+						title="Ir al ejercicio de variables de javascript">Variables</a></li>
+					</ul>
+				<li>
 			</ul>
 		</li>
 	</ul>

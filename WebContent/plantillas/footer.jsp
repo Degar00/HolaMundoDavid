@@ -1,4 +1,22 @@
+<footer>
+	<ul id="list_paginas">
+		<li><a href="#" target="_blank">Contacto</a></li>
+		<li><a href="#" target="_blank">Aviso legal</a></li>
+		<li><a href="#" target="_blank">@Copyright</a></li>
+	</ul>
+	
+	<ul class="social_links">
+		<li class="facebook"></li>
+		<li class="google"></li>
+		<li class="twitter"></li>
+		<li class="youtube"></li>
+	</ul>
+	<div class="clearfix"></div>
+</footer>
+
 </div> <!-- container -->
+
+
 
 <!-- jQuery -->
 <script src="js/jquery-2.1.4.min.js"></script>
