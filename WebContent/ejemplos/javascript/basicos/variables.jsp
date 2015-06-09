@@ -44,17 +44,17 @@
 				@return: true si es vocal, false en caso contrario
 				*/
 				function es_vocal(var1) {
-					var result = null;
+					var result = false;
 					switch (true) {
 					case (var1=='a'||var1=='A'):
 					case (var1=='e'||var1=='E'):
 					case (var1=='i'||var1=='I'):
 					case (var1=='o'||var1=='O'):
 					case (var1=='u'||var1=='U'):
-						result = 'es vocal';
+						result = 'true';
 						break;
 					default:
-						result = 'no es vocal';
+						result = 'false';
 						break;
 					}
 
