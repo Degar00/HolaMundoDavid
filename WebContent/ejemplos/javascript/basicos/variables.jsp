@@ -38,7 +38,11 @@
 // 				console.info('El resultado fuera de la funcion es igual a:\n\t '+sumar(3,6));
 	
 				
-			
+				/**
+				Funcion que nos dice si la variable es una vocal
+				@param var1: letra a comprobar
+				@return: true si es vocal, false en caso contrario
+				*/
 				function es_vocal(var1) {
 					var result = null;
 					switch (true) {
