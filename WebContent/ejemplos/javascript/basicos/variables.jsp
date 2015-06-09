@@ -43,34 +43,55 @@
 				@param var1: letra a comprobar
 				@return: true si es vocal, false en caso contrario
 				*/
+				
 				function es_vocal(var1) {
 					var result = false;
-					switch (true) {
-					case (var1=='a'||var1=='A'):
-					case (var1=='e'||var1=='E'):
-					case (var1=='i'||var1=='I'):
-					case (var1=='o'||var1=='O'):
-					case (var1=='u'||var1=='U'):
-						result = 'true';
-						break;
-					default:
-						result = 'false';
-						break;
+					//					Forma Ander
+
+					switch (var1) {
+						case 'a':
+						case 'e':
+						case 'i':
+						case 'o':
+						case 'u':
+						case 'A':
+						case 'E':
+						case 'I':
+						case 'O':
+						case 'U':								
+							result = true;
+							break;
 					}
 
 					return result;
-				}
-				
-				var datos=['a','e','A',13,null,undefined,0.5,'and','n','ñ'];
-				
-// 				for (i = 0; i < datos.length; i++) {
-// 				console.debug(datos[i]+' que es? ' + es_vocal(datos[i]));
-// 				}
-				
-				
-				
 
-			
+					//					Mi forma
+
+					// 					switch (true) {
+					// 						case (var1=='a'||var1=='A'):
+					// 						case (var1=='e'||var1=='E'):
+					// 						case (var1=='i'||var1=='I'):
+					// 						case (var1=='o'||var1=='O'):
+					// 						case (var1=='u'||var1=='U'):
+					// 							result = true;
+					// 							break;
+					// 			sobra el default por estar ya inicializado en false
+					//							default:
+					// 							result = 'false';
+					// 							break;
+					// 					}
+
+					// 					return result;
+					
+				}//end: es_vocal
+
+				var datos = [ 'a', 'e', 'A', 13, null, undefined, 0.5, 'and',
+						'n', '\u00f1' ];
+
+				for (i = 0; i < datos.length; i++) {
+					console.debug(datos[i] + ' es vocal? ' + es_vocal(datos[i]));
+				}
+
 				function cineAlmendralejo(dia, edad) {
 
 					var resultado = null;
@@ -118,8 +139,8 @@
 					return resultado;
 				}
 
-				console.debug("Miercoles, 50 años "
-						+ cineAlmendralejo('miercoles', 50));
+				// 				console.debug("Miercoles, 50 años "
+				// 						+ cineAlmendralejo('miercoles', 50));
 			</script>
 			</div> <!-- cnt_article -->
 		</header>
