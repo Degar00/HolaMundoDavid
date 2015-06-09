@@ -112,6 +112,8 @@
 					<ul>
 						<li><a href="ejemplos/javascript/basicos/variables.jsp"
 						title="Ir al ejercicio de variables de javascript">Variables</a></li>
+						<li><a href="ejemplos/javascript/basicos/calculadora.jsp"
+						title="Ir al ejercicio de calculadora de javascript">Calculadora</a></li>						
 					</ul>
 				<li>
 			</ul>
