@@ -13,6 +13,53 @@
   <script src="js/utilidades.js"></script>
   
   <script type="text/javascript">
+  		QUnit.test( "Funciones predefinidas", function( assert ) {
+  			assert.ok ( escape("Hola 'Mundo' escapado")=="Hola%20%27Mundo%27%20escapado", "Hola 'Mundo' escapado (Hola%20%27Mundo%27%20escapado)");
+  			assert.ok ( escape("Hóla 'Mundo' escapado")=="H%F3la%20%27Mundo%27%20escapado", "Hóla 'Mundo' escapado(H%F3la%20%27Mundo%27%20escapado)");
+  			assert.ok ( unescape("Hola%20%27Mundo%27%20escapado")=="Hola 'Mundo' escapado", "Hola 'Mundo' escapado (Hola%20%27Mundo%27%20escapado)");
+  			assert.ok ( unescape("H%F3la%20%27Mundo%27%20escapado")=="Hóla 'Mundo' escapado", "Hóla 'Mundo' escapado(H%F3la%20%27Mundo%27%20escapado)");
+  			assert.ok ( (10 + "1")=="101", "Sin parseInt 10 + \"1\"= \"101\"");
+  			assert.ok ( (10 + parseInt("1"))==11, "Con parseInt 10 + parseInt\"1\"= 11");
+  			assert.ok ( isNaN("123abc"), "'123abc' no es numero");
+  			assert.ok ( !isNaN(123), "123 es numero");
+  			
+  			var jonWaine = new Array("jon", "waine", 45);
+  			
+  			assert.ok ( jonWaine[0]=="jon", "jonWaine[0]=='jon'" );
+  			assert.ok ( jonWaine[1]=="waine", "jonWaine[1]=='waine'" );
+  			assert.ok ( jonWaine[2]==45, "jonWaine[2]==45" );
+  			assert.ok ( jonWaine.length==3, "jonWaine.length==3" );
+  			
+  			var pelis = new Array("el bueno, el feo y el malo", 1966, "Sergio Leone")
+  			var jonWaine2 = jonWaine.concat(pelis);
+  			assert.ok ( jonWaine2[0]=="jon", "jonWaine[0]=='jon'" );
+  			assert.ok ( jonWaine2[1]=="waine", "jonWaine[1]=='waine'" );
+  			assert.ok ( jonWaine2[2]==45, "jonWaine[2]==45" );
+  			assert.ok ( jonWaine2[3]=="el bueno, el feo y el malo", "jonWaine[3]=='el bueno, el feo y el malo'" );
+  			assert.ok ( jonWaine2[4]==1966, "jonWaine[4]==1966" );
+  			assert.ok ( jonWaine2[5]=="Sergio Leone", "jonWaine[5]=='Sergio Leone'" );
+  			
+  			assert.ok ( jonWaine.join("#")=="jon#waine#45", "jonWaine.join('#')=='jon#waine#45'" );
+  			
+  			jonWaine.reverse();
+  			assert.ok ( jonWaine[0]==45, "jonWaine[0]==45" );
+  			assert.ok ( jonWaine[1]=="waine", "jonWaine[1]=='waine'" );
+  			assert.ok ( jonWaine[2]=="jon", "jonWaine[2]=='jon'" );
+  			
+  			jonWaine.sort();
+  			assert.ok ( jonWaine[0]==45, "jonWaine[0]==45" );
+  			assert.ok ( jonWaine[1]=="jon", "jonWaine[1]=='jon'" );
+  			assert.ok ( jonWaine[2]=="waine", "jonWaine[2]=='waine'" );
+  			
+  			jonWaine2.sort();
+  			assert.ok ( jonWaine2[0]==1966, "jonWaine[0]==1966" );
+  			assert.ok ( jonWaine2[1]==45, "jonWaine[1]==45" );
+  			assert.ok ( jonWaine2[2]=="Sergio Leone", "jonWaine[4]=='Sergio Leone'" );
+  			assert.ok ( jonWaine2[3]=="el bueno, el feo y el malo", "jonWaine[2]=='el bueno, el feo y el malo'" );
+  			assert.ok ( jonWaine2[4]=="jon", "jonWaine[3]=='jon'" );
+   			assert.ok ( jonWaine2[5]=="waine", "jonWaine[5]=='waine'" );
+  		});
+  
 		QUnit.test( "cineAlmendralejo (dia, edad)", function( assert ) {
 			
 		  	assert.ok( cineAlmendralejo ('lunes', 35) == '2€', "lunes = 35 años = 2€" );
