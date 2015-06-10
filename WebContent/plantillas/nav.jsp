@@ -120,7 +120,7 @@
 					<h3>Tests</h3>
 					<ul>
 						<li><a href="ejemplos/javascript/tests/test.jsp"
-						title="Ir a los tests">Test</a></li>
+						title="Ir a los tests">QUnit</a></li>
 					</ul>
 				<li>
 			</ul>

@@ -15,10 +15,33 @@
   <script type="text/javascript">
 		QUnit.test( "cineAlmendralejo (dia, edad)", function( assert ) {
 			
-		  	assert.ok( cineAlmendralejo ('lunes', 35) == '2€', "Lunes = 35 años = 2€" );
-		  	assert.ok( cineAlmendralejo ('lunes', 34) == '2€', "Lunes < 35 años = 2€" );
-		  	assert.ok( cineAlmendralejo ('lunes', 36) == '5€', "Lunes > 35 años = 5€" );
-		  	
+		  	assert.ok( cineAlmendralejo ('lunes', 35) == '2€', "lunes = 35 años = 2€" );
+		  	assert.ok( cineAlmendralejo ('lunes', 34) == '2€', "lunes < 35 años = 2€" );
+		  	assert.ok( cineAlmendralejo ('lunes', 36) == '5€', "lunes > 35 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('martes', 25) == '2€', "martes = 25 años = 2€" );
+		  	assert.ok( cineAlmendralejo ('martes', 24) == '2€', "martes < 25 años = 2€" );
+		  	assert.ok( cineAlmendralejo ('martes', 26) == '5€', "martes > 25 <50 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('martes', 50) == '5€', "martes = 50 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('martes', 49) == '5€', "martes > 25 < 50 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('martes', 51) == '7€', "martes > 50 años = 7€" );
+		  	assert.ok( cineAlmendralejo ('miercoles', 18) == '3€', "miercoles = 18 años = 3€" );
+		  	assert.ok( cineAlmendralejo ('miercoles', 16) == '3€', "miercoles < 18 años = 3€" );
+		  	assert.ok( cineAlmendralejo ('miercoles', 20) == '5€', "miercoles > 18 <50 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('miercoles', 50) == '5€', "miercoles = 50 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('miercoles', 49) == '5€', "miercoles > 18 < 50 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('miercoles', 51) == '8€', "miercoles > 50 años = 8€" );
+		  	assert.ok( cineAlmendralejo ('jueves', 18) == '5€', "jueves = 18 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('jueves', 15) == '5€', "jueves < 18 años = 5€" );
+		  	assert.ok( cineAlmendralejo ('jueves', 20) == '7€', "jueves > 18 años = 7€" );
+		  	assert.ok( cineAlmendralejo ('viernes', 20) == '10€', "viernes cualquier edad = 10€" );
+		  	assert.ok( cineAlmendralejo ('sabado', 20) == '10€', "sabado cualquier edad = 10€" );
+		  	assert.ok( cineAlmendralejo ('domingo', 20) == '10€', "domingo cualquier edad = 10€" );
+		  	assert.ok( cineAlmendralejo ('domiingo', 20) == 'el dia de la semana no es valido', "Error al introducir el dia de la semana" );
+		  	assert.ok( cineAlmendralejo ('domingo', -20) == 'la edad no es valida', "Error al introducir la edad (negativa)" );
+		  	assert.ok( cineAlmendralejo ('Domingo', 20) == '10€', "Dia de la semana con mayusculas" );
+		  	assert.ok( cineAlmendralejo (null, 0) == 'el dia de la semana no es valido', "Dia de la semana null" );
+		  	assert.ok( cineAlmendralejo ('lunes', null) == 'la edad no es valida', "Edad null" );
+		  	assert.ok( cineAlmendralejo ('domingo', 'veinte') == 'la edad no es valida', "Edad como texto(domingo, veinte)" );
 		});
 		
 		QUnit.test( "es_par (numero)", function( assert ) {
