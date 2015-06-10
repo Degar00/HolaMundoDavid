@@ -9,19 +9,24 @@
 
 /**
 Calcula el precio de la entrada del cine
-@param dia: dia de la semana escrito en minusculas ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+@param dia: dia de la semana escrito en minusculas o mayusculas ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
 @param edad: edad de la persona. Formato numero entero >0
 @return precio en euros
 */
 function cineAlmendralejo(dia, edad) {
 
 					var resultado = null;
+					if (dia!=null){
+						dia=dia.toLowerCase(dia);
+					}
 					switch (dia) {
 					case "lunes":
 						if ((0 < edad) && (edad <= 35)) {
 							resultado = '2€';
-						} else {
+						} else if (edad>35){
 							resultado = '5€';
+						}else{
+							resultado='la edad no es valida';
 						}
 						break;
 					case "martes":
@@ -29,8 +34,10 @@ function cineAlmendralejo(dia, edad) {
 							resultado = '2€';
 						} else if ((25 < edad) && (edad <= 50)) {
 							resultado = '5€';
-						} else {
+						} else if (edad >50){
 							resultado = '7€';
+						}else{
+							resultado='la edad no es valida';
 						}
 						break;
 					case "miercoles":
@@ -38,24 +45,35 @@ function cineAlmendralejo(dia, edad) {
 							resultado = '3€';
 						} else if ((18 < edad) && (edad <= 50)) {
 							resultado = '5€';
-						} else {
+						} else if (edad >50){
 							resultado = '8€';
+						}else{
+							resultado='la edad no es valida';
 						}
 						break;
 					case "jueves":
-						if (edad <= 18) {
+						if ((0 < edad) && (edad <= 18)) {
 							resultado = '5€';
 						} else if (edad > 18) {
 							resultado = '7€';
+						}else{
+							resultado='la edad no es valida';
 						}
 						break;
 					case "viernes":
 					case "sabado":
 					case "domingo":
-						resultado = '10€';
+						if (edad>0){
+							resultado = '10€';
+						} else{
+							resultado='la edad no es valida';
+						}
 						break;
 					default:
 						resultado = 'el dia de la semana no es valido';
+					}
+					if (edad==null){
+						resultado='la edad no es valida';
 					}
 					return resultado;
 				}
