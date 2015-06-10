@@ -116,6 +116,13 @@
 						title="Ir al ejercicio de calculadora de javascript">Calculadora</a></li>						
 					</ul>
 				<li>
+				<li>
+					<h3>Tests</h3>
+					<ul>
+						<li><a href="ejemplos/javascript/tests/test.jsp"
+						title="Ir a los tests">Test</a></li>
+					</ul>
+				<li>
 			</ul>
 		</li>
 	</ul>

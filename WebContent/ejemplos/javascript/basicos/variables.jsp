@@ -92,6 +92,14 @@
 					console.debug(datos[i] + ' es vocal? ' + es_vocal(datos[i]));
 				}
 
+				
+				/**
+					Calcula el precio de la entrada del cine
+					@param dia: dia de la semana escrito en minusculas ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+					@param edad: edad de la persona. Formato numero entero >0
+					@return precio en euros
+				
+				*/
 				function cineAlmendralejo(dia, edad) {
 
 					var resultado = null;
@@ -139,8 +147,8 @@
 					return resultado;
 				}
 
-				// 				console.debug("Miercoles, 50 años "
-				// 						+ cineAlmendralejo('miercoles', 50));
+								console.debug("Miercoles, 50 años "
+										+ cineAlmendralejo('miercoles', 50));
 			</script>
 			</div> <!-- cnt_article -->
 		</header>

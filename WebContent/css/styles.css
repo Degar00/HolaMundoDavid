@@ -644,14 +644,16 @@ footer li {
 
 /* Calculadora */
 
-#t_calculadora, #t_calculadora td{
-	padding: 15px;
-}
+/* #t_calculadora, #t_calculadora td{ */
+/* 	padding: 15px; */
+/* } */
+
 
 #t_calculadora{
 	float: left;
 	margin-right: 20px;
 	text-align: center;
+	border: 2px solid grey;
 }
 
 #result_calc{
@@ -661,6 +663,7 @@ footer li {
 #t_calculadora td {
 	width: 30px;
 	height: 30px;
+	padding: 15px;
 }
 
 #t_calculadora div {
