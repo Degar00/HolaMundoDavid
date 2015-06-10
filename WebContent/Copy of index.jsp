@@ -2,7 +2,7 @@
 
 <div id="index">
 	
-	<h1>Pagina Ongi Etorri</h1>
+	<h1>Pagina de Ongi Etorri!!</h1>
 	
 	<jsp:include page="plantillas/nav.jsp"></jsp:include>
 
