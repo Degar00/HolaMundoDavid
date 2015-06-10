@@ -42,6 +42,7 @@
 		  	assert.ok( cineAlmendralejo (null, 0) == 'el dia de la semana no es valido', "Dia de la semana null" );
 		  	assert.ok( cineAlmendralejo ('lunes', null) == 'la edad no es valida', "Edad null" );
 		  	assert.ok( cineAlmendralejo ('domingo', 'veinte') == 'la edad no es valida', "Edad como texto(domingo, veinte)" );
+		  	assert.ok( cineAlmendralejo ('lunes', 15.5) == '2€', "Edad decimal" );
 		});
 		
 		QUnit.test( "es_par (numero)", function( assert ) {
